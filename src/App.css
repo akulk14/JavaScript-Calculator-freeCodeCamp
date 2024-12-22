@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body, html{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b2f7d6;
+  height: 100vh;
+}
+
+.container{
+  width: 300px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #464f58;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#calculator{
+  display: grid;
+  grid-template-areas: 
+  "display display display display"
+  "clear negative percentage divide"
+  "seven eight nine multiply"
+  "four five six subtract"
+  "one two three add"
+  "zero zero decimal equals";
+  grid-template-columns: 60px 60px 60px 60px;
+  gap: 10px;
+}
+
+button{
+  border: 0;
+  outline: 0;
+  width: 50px;
+  height: 50px;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+  box-shadow: -5px -5px 10px #40444b, 5px 5px 10px #40444b;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:active{
+  transform: scale(0.95);
+}
+
+.light-gray{
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.mint-green{
+  color: #23262a;
+  background-color: #b2f7d6;
+}
+
+#answer{
+  font-size: 2.5rem;
+  height: 50px;
+  color: #ffffff;
+  margin: 0.5rem;
+}
+
+#expression{
+  font-size: 1.25rem;
+  height: 30px;
+  color: #cccccc;
+  margin: 0.5rem;
+}
+
+#display{
+  grid-area: display;
+}
+
+#clear{
+  grid-area: clear;
+}
+
+#negative{
+  grid-area: negative;
+}
+
+#percentage{
+  grid-area: percentage;
+}
+
+#divide{
+  grid-area: divide;
+}
+
+#seven{
+  grid-area: seven;
+}
+
+#eight{
+  grid-area: eight;
+}
+
+#nine{
+  grid-area: nine;
+}
+
+#multiply{
+  grid-area: multiply;
+}
+
+#four{
+  grid-area: four;
+}
+
+#five{
+  grid-area: five;
+}
+
+#six{
+  grid-area: six;
+}
+
+#subtract{
+  grid-area: subtract;
+}
+
+#one{
+  grid-area: one;
+}
+
+#two{
+  grid-area: two;
+}
+
+#three{
+  grid-area: three;
+}
+
+#add{
+  grid-area: add;
+}
+
+#zero{
+  grid-area: zero;
+  width: 120px;
+}
+
+#decimal{
+  grid-area: decimal;
+}
+
+#equals{
+  grid-area: equals;
+}
